@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression_Swiggy">
+	<test thread-count="5" name="SwiggyRegression">
+		<parameter name="searchType" value="dish" />
+		<parameter name="searchTypeValue" value="sandwich" />
+		<parameter name="phoneNumber" value="9619127329" />
+		<parameter name="orderFoodBy" value="restaurant" />
+		<parameter name="orderFood" value="mcdonalds" />
+		<classes>
+			<class name="simpliLearn.swiggyApplication.SwiggyAppTests" />
+		</classes>
+	</test>
+<!-- 	<test thread-count="5" name="AccountLoginAndBuyFood"> -->
+<!-- 		<parameter name="phoneNumber" value="9619127329" /> -->
+<!-- 		<parameter name="searchType" value="restaurant" /> -->
+<!-- 		<parameter name="searchTypeValue" value="mcdonalds" /> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="simpliLearn.swiggyApplication.AccountLoginAndBuyFood" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite> <!-- Swiggy -->
